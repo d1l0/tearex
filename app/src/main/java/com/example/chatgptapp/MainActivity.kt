@@ -40,7 +40,7 @@ class MainActivity : AppCompatActivity(), RecognitionListener {
         sendButton.setOnClickListener {
             val inputText = editText.text.toString()
             ChatGPTTask("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") { response ->
-                responseView.text = response ?: "Failed to get response."
+                responseView.text = response ?: "Failed to get response"
             }.execute(inputText)
         }
         // Initialize the SpeechRecognizer
